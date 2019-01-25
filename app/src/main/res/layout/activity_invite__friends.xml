@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Invite_Friends">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher_metadata_icon" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back"
+            android:text="دعوت از دوستان"
+            android:layout_marginLeft="22dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:text="نحوه کسب امتیاز"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="14dp"
+        />
+
+<RelativeLayout
+    android:id="@+id/Re1"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_below="@+id/text1"
+    android:layout_marginTop="13dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/invite_11">
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:text="با معرفی ما به دوستان خود هر دو امتیاز بگیرید"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/btn_inf"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginLeft="56dp"
+        android:background="@drawable/invite_inf1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#fa9c04"
+            android:gravity="center_horizontal"
+            android:text="توضیحات"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="62dp"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/group_469_11"
+            android:background="@drawable/invite_inf2"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:text="کد دعوت شما "
+        android:layout_below="@+id/Re1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="14dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/Re2"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/invite_11">
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="ASDEDSWAQ"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text4"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginLeft="56dp"
+            android:background="@drawable/invite_11">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#0067c4"
+                android:gravity="center_horizontal"
+                android:text="اشتراک گذاری"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="62dp"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/group_469_12"
+                android:background="@drawable/invite_code1"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

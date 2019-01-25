@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Buy_Coins"></activity>
+        <activity android:name=".Invite_Friends" />
     </application>
 
 </manifest>
