@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".Buy_Coins" />
         <activity android:name=".Invite_Friends" />
-        <activity android:name=".Store.Store"></activity>
+        <activity android:name=".Store.Store" />
     </application>
 
 </manifest>

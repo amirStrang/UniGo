@@ -33,5 +33,79 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/C"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/invite_11">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رتبه در شهر"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:textColor="#030303"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1889"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="21dp"
+            android:textColor="#030303"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/D"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/C"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/invite_11">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رتبه در منطقه"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:textColor="#030303"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="800"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="21dp"
+            android:textColor="#030303"/>
+    </RelativeLayout>
+    <TableLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/D"
+        android:layout_marginTop="10dp">
+    </TableLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs">
+    </android.support.v4.view.ViewPager>
 
 </RelativeLayout>
