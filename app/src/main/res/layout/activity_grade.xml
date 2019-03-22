@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eaglet.unigo.Login.Grade">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3694f6"
+        android:padding="20dp"
+        android:layout_weight="0.1">
+
+
+            <TextView
+                android:id="@+id/TV_TopMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UniGo"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/choose_grade" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="11"
+        android:padding="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+
+                <Button
+                    android:id="@+id/Davazdahom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/g_drawable"
+                    android:drawableRight="@mipmap/davazdahomxxxhdpi"
+                    android:text="@string/davazdahom"
+                    android:textAllCaps="false"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    >
+
+                </Button>
+
+
+
+                <Button
+                    android:id="@+id/Yazdahom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/g_drawable"
+                    android:drawableRight="@mipmap/yazdahomxxxhdpi"
+                    android:text="@string/yazdahom"
+                    android:textAllCaps="false"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    >
+
+                </Button>
+
+
+
+
+                <Button
+                    android:id="@+id/Dahom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/g_drawable"
+                    android:drawableRight="@mipmap/dahomxxxhdpi"
+                    android:text="@string/dahom"
+                    android:textAllCaps="false"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    >
+
+                </Button>
+
+
+            <Button
+                android:id="@+id/Nohom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/g_drawable"
+                android:drawableRight="@mipmap/nohomxxxhdpi"
+                android:text="@string/nohom"
+                android:textAllCaps="false"
+                android:padding="20dp"
+                android:textSize="19sp"
+                android:textStyle="bold">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/Hashtom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/g_drawable"
+                    android:drawableRight="@mipmap/hashtomxxxhdpi"
+                    android:text="@string/hashtom"
+                    android:textAllCaps="false"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    >
+
+                </Button>
+
+
+                <Button
+                    android:id="@+id/Haftom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/g_drawable"
+                    android:drawableRight="@mipmap/haftomxxxhdpi"
+                    android:text="@string/haftom"
+                    android:textAllCaps="false"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    >
+
+                </Button>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

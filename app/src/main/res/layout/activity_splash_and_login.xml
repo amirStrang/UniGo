@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unigo_back"
+
+    android:padding="20dp"
+    tools:context="com.eaglet.unigo.Login.SplashAndLogin">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/drawable"
+                            android:text="@string/SabteNam"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"/>
+
+
+                        <Button
+                            android:background="@drawable/drawable2"
+                            android:text="@string/vorod"
+                            android:textSize="16sp"
+                            android:textColor="#3694f6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"/>
+
+                </LinearLayout>
+
+
+</RelativeLayout>

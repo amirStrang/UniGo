@@ -8,4 +8,41 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="SabteNam">ثبت نام</string>
+    <string name="vorod">ورود</string>
+    <string name="PleaseTell">شماره تلفن همراه خود را وارد کنید</string>
+    <string name="reqTell">شماره تلفن همراه</string>
+    <string name="next">بعدی</string>
+    <string name="choose_grade">پایه ی تحصیلی خود را انتخاب کنید</string>
+    <string name="davazdahom">Senior High School \n \n دوازدهم</string>
+    <string name="yazdahom">Senior High School \n \n یازدهم</string>
+    <string name="dahom">Senior High School \n \n دهم</string>
+    <string name="nohom">Senior High School \n \n نهم</string>
+    <string name="hashtom">Senior High School \n \n هشتم</string>
+    <string name="haftom">Senior High School \n \n هفتم</string>
+    <string name="EnterMajor">رشته تحصیلی خود را انتخاب کنید</string>
+    <string name="ensani">انسانی</string>
+    <string name="riazi">ریاضی</string>
+    <string name="tajrobi">تجربی</string>
+
+    <string-array name="cities">
+        <item>تهران</item>
+        <item>شیراز</item>
+        <item>اصفهان</item>
+    </string-array>
+
+
+    <string-array name="sh_cities">
+        <item>تهران</item>
+        <item>دماوند</item>
+        <item>فیروزکوه</item>
+    </string-array>
+    <string-array name="school_cities">
+        <item>تهران</item>
+        <item>دماوند</item>
+        <item>فیروزکوه</item>
+    </string-array>
+
 </resources>

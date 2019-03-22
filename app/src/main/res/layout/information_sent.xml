@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_dark_transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_blue_line">
+        <RelativeLayout
+            android:id="@+id/titxt"
+            android:layout_alignParentTop="true"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/roundedblue_r_2"
+            android:layout_centerHorizontal="true">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UniGo"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titxt"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/how"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اطلاعات شما برای ما ارسال شد تا حداکثر دو روز اطلاعات شما بررسی خواهد شد
+تا قبل از تایید نهایی میتوانید از محتوای اپلیکیشن استفاده کنید"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/roundedblue_r_1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="باشه"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

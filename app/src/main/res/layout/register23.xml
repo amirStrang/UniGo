@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eaglet.unigo.Registering.Register23">
+
+    <RelativeLayout
+        android:id="@+id/Action_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3694f6"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="UniGo"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+<ScrollView
+    android:id="@+id/form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/Action_Bar"
+    android:layout_marginBottom="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <RelativeLayout
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+
+            >
+
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سلام استاد گرامی"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_toLeftOf="@id/hi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hi"
+                android:text="لطفا برای فعالیت در UniGo مشخصات خود را تکمیل کنید."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/father"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام پدر"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/welcome"
+            />
+        <EditText
+            android:layout_below="@id/father"
+            android:id="@+id/shNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره شناسنامه"
+            />
+        <EditText
+            android:id="@+id/codemelli"
+            android:layout_below="@id/shNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="کدملی"
+            />
+        <EditText
+            android:id="@+id/shSerie"
+            android:layout_below="@id/codemelli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="سری شناسنامه"
+            />
+        <TextView
+            android:id="@+id/citytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shSerie"
+            android:text="شهر"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <Spinner
+            android:id="@+id/cityList"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/citytxt"
+            android:layout_below="@id/shSerie"
+            android:layout_marginTop="5dp"
+            style="@style/spinnerItemStyle"></Spinner>
+
+
+        <TextView
+            android:id="@+id/shCitytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shSerie"
+            android:text="شهرستان"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/shCityList"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <Spinner
+            android:id="@+id/shCityList"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/shSerie"
+            style="@style/spinnerItemStyle"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            ></Spinner>
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_below="@id/citytxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="آدرس"
+
+            />
+        <EditText
+            android:id="@+id/postcode"
+            android:layout_below="@id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="کدپستی"
+            />
+        <EditText
+            android:id="@+id/officeNum"
+            android:layout_below="@id/postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره تماس محل کار"
+            />
+        <EditText
+            android:id="@+id/officeAddress"
+            android:layout_below="@id/officeNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="آدرس محل کار"
+            />
+        <EditText
+            android:id="@+id/post"
+            android:layout_below="@id/officeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="سمت"
+            />
+        <EditText
+            android:id="@+id/accountNum"
+            android:layout_below="@id/post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره حساب"
+            />
+        <EditText
+            android:id="@+id/cardNum"
+            android:layout_below="@id/accountNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره کارت"
+            />
+        <EditText
+            android:id="@+id/sCardNum"
+            android:layout_below="@id/cardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="صاحب شماره کارت"
+            />
+        <EditText
+            android:id="@+id/shebaNum"
+            android:layout_below="@id/sCardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره شبا"
+            />
+        <EditText
+            android:id="@+id/brancCode"
+            android:layout_below="@id/shebaNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="کدشعبه"
+            />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brancCode"
+            android:text="سطح فعالیت ها"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <RelativeLayout
+            android:id="@+id/pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/level">
+
+            <TextView
+                android:id="@+id/semiPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="نیمه حرفه ای"
+
+                android:layout_alignParentLeft="true"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="end"
+                android:layout_margin="20dp"/>
+        <RadioButton
+            android:id="@+id/semiProRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/semiPro"
+            android:layout_alignBaseline="@id/semiPro"
+            />
+            <TextView
+                android:id="@+id/Professional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="حرفه ای"
+
+                android:layout_toRightOf="@id/semiProRB"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="end"
+                android:layout_margin="20dp"/>
+        <RadioButton
+            android:id="@+id/ProfessinalRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Professional"
+            android:layout_alignBaseline="@id/Professional"
+            /></RelativeLayout>
+        <TextView
+            android:id="@+id/upl_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:layout_below="@id/pro"
+            android:layout_marginBottom="5dp"
+            tools:text="تصویر مدارک زیر را آپلود کنید"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upl_txt">
+        <ImageView
+
+            android:id="@+id/ShenasnameImg"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dashed_iv"
+            android:src="@drawable/round_camera"
+            android:layout_alignParentTop="true"
+            android:padding="20dp"
+            android:layout_marginBottom="15dp"/>
+
+            <ImageView
+
+                android:id="@+id/melliCardImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dashed_iv"
+                android:padding="20dp"
+                android:src="@drawable/round_camera" />
+            <ImageView
+
+                android:id="@+id/qabz"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/dashed_iv"
+                android:src="@drawable/round_camera"
+                android:layout_alignParentTop="true"
+                android:padding="20dp"/>
+            <TextView
+
+                android:id="@+id/pg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ShenasnameImg"
+                android:text="صفحات اول و"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pg1"
+                android:text="دوم شناسنامه"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/melliCardImg"
+                android:text="کارت ملی"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+            <TextView
+
+                android:id="@+id/q1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qabz"
+                android:text="یکی ازقبوض خدماتی"
+                android:textAlignment="center"
+                android:layout_alignParentLeft="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+    <RelativeLayout
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3694f6"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="بعدی"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+</RelativeLayout>

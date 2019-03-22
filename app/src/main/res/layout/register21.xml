@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eaglet.unigo.Registering.Register21">
+
+
+    <RelativeLayout
+        android:id="@+id/Action_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3694f6"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="UniGo"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/form"
+    android:layout_below="@id/Action_Bar"
+    android:layout_above="@id/registerbtn">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        >
+
+        <RelativeLayout
+            android:id="@+id/profile_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            >
+            <com.eaglet.unigo.Registering.CircleImageView
+                android:id="@+id/show_profileImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/person"
+                />
+            <com.eaglet.unigo.Registering.CircleImageView
+                android:id="@+id/add_Image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/round_cam"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tOrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_picture"
+            android:padding="20dp">
+
+            <RadioButton
+                android:id="@+id/studentRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="RBclicked"
+                />
+            <TextView
+                android:id="@+id/studenttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دانش آموز"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_toLeftOf="@id/studentRB"
+                android:layout_margin="3dp"
+                />
+            <RadioButton
+                android:id="@+id/teacherRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/studenttxt"
+                android:layout_marginRight="25dp"
+                android:onClick="RBclicked"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="معلم"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_toLeftOf="@id/teacherRB"
+                android:layout_margin="3dp"
+                />
+        </RelativeLayout>
+        <fragment
+            android:id="@+id/formFragment"
+            android:name="android.support.v4.app.ListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tOrs"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+        <RelativeLayout
+        android:id="@+id/registerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3694f6"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="ثبت نام"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+</RelativeLayout>
+

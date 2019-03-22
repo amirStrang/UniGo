@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eaglet.unigo.Login.Major"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3694f6"
+        android:padding="20dp"
+        android:layout_weight="0.1">
+
+
+        <TextView
+            android:id="@+id/TV_TopMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UniGo"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+
+        <TextView
+            android:id="@+id/EnterMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:text="@string/EnterMajor"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <Button
+            android:id="@+id/Ensani"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/major_drawable"
+            android:drawableRight="@mipmap/ensanixxxhdpi"
+            android:padding="10dp"
+            android:text="@string/ensani"
+            android:textSize="16sp"
+            />
+
+
+        <Button
+            android:id="@+id/Riazi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/major_drawable"
+            android:drawableLeft="@mipmap/riazixxxhdpi"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/riazi"
+            android:textSize="16sp"
+            />
+
+
+
+        <Button
+            android:id="@+id/Tajrobi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/major_drawable"
+            android:drawableRight="@mipmap/tajrobixxxhdpi"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tajrobi"
+            android:textSize="16sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

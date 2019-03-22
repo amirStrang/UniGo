@@ -145,5 +145,11 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">10sp</item>
     </style>
+    <style name="spinnerItemStyle">
+        <item name="android:padding">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:background">@drawable/gray_line_cadre</item>
+        <item name="android:textColor">#000000</item>
+    </style>
 
 </resources>

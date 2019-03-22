@@ -33,7 +33,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="75dp"
         android:background="@drawable/film_btn"
-        android:drawableTop="@drawable/group474"
+        android:drawableTop="@drawable/group_474"
         android:paddingTop="21dp" />
     <Button
         android:id="@+id/store_btn"
