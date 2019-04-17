@@ -23,13 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Buy_Coins" />
         <activity android:name=".Invite_Friends" />
         <activity android:name=".Store.Store" />
         <activity android:name=".Login.Login" />
         <activity android:name=".Login.SplashAndLogin" />
         <activity android:name=".Login.Major" />
         <activity android:name=".Login.Grade" />
+        <activity android:name=".Login.CodeVerify" />
+        <activity android:name=".mainMenu.setting" />
+
         <activity android:name=".Registering.Register21"
             android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".Registering.Register23"

@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    tools:context="com.eaglet.unigo.mainMenu.setting"
+    android:background="#fafafa"
     >
-
-
-        <RelativeLayout
-            android:id="@+id/Action_Bar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="#3694f6"
-            android:layout_alignParentTop="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="بیشتر"
-                android:textSize="20sp"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:textColor="#ffffff"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/options"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Action_Bar">
+<RelativeLayout
+    android:id="@+id/options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <RelativeLayout
         android:id="@+id/buyicon"
         android:layout_width="match_parent"
@@ -215,8 +197,8 @@
             android:background="@drawable/below_line"
             android:layout_toLeftOf="@id/abouttv"
             />
-         </RelativeLayout>
-        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
     <TextView
         android:id="@+id/follow"
         android:layout_width="wrap_content"
@@ -226,15 +208,16 @@
         android:textColor="#000000"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/options"
-        android:layout_margin="20dp"/>
+        android:layout_marginTop="40dp"
+        android:layout_margin="8dp"/>
 
     <RelativeLayout
         android:id="@+id/social"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/follow">
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/follow"
+        android:layout_centerHorizontal="true">
         <ImageView
             android:id="@+id/instagramlogo"
             android:layout_width="50dp"
@@ -252,6 +235,7 @@
             android:layout_height="50dp"
             android:src="@mipmap/group456"
             android:layout_toRightOf="@id/facebooklogo"/>
+        
+    </RelativeLayout>
 
-    </RelativeLayout>
-    </RelativeLayout>
+</RelativeLayout>

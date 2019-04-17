@@ -22,8 +22,8 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.eaglet.unigo.Login.CodeVerify;
 import com.eaglet.unigo.R;
-import com.eaglet.unigo.Login.Grade;
 
 public class Register21 extends AppCompatActivity {
     private CircleImageView profileImage,addImage;
@@ -52,17 +52,16 @@ public class Register21 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(isteacher==1){
-
-                    //it should go to register2.2 activity but this activity is not available!!
-                    Intent intent=new Intent(Register21.this, Register23.class);
+                if (teacherRB.isChecked()|| studentRB.isChecked()) {
+                    Intent intent = new Intent(Register21.this, CodeVerify.class);
+                    if(teacherRB.isChecked()){
+                        intent.putExtra("rule","teacher");
+                    }else if(studentRB.isChecked()){
+                        intent.putExtra("rule","student");
+                    }
                     startActivity(intent);
-                    finish();
-                }else if(isteacher==0){
-                    Intent intent=new Intent(Register21.this, Grade.class);
-                    startActivity(intent);
-                    finish();
-                }else{
+                }
+                else{
                     Toast.makeText(Register21.this, "لطفا اطلاعات خواسته شده در فرم مخصوص به خود را پرکنید!", Toast.LENGTH_SHORT).show();
                 }
             }

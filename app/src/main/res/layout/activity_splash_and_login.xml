@@ -19,7 +19,7 @@
             android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button"
+                            android:id="@+id/registerbtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/drawable"
@@ -32,6 +32,7 @@
 
 
                         <Button
+                            android:id="@+id/loginbtn"
                             android:background="@drawable/drawable2"
                             android:text="@string/vorod"
                             android:textSize="16sp"
