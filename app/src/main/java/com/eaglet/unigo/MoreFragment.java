@@ -3,6 +3,7 @@ package com.eaglet.unigo;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -34,6 +35,13 @@ public class MoreFragment extends Fragment {
         contact= mview.findViewById(R.id.contact);
         about= mview.findViewById(R.id.about);
 
+        invite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),Invite_Friends.class);
+                startActivity(intent);
+            }
+        });
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
