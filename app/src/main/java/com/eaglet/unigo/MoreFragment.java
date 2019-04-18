@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import android.widget.Toast;
 public class MoreFragment extends Fragment {
     View mview;
     RelativeLayout buy_coin,qfactory ,invite,rating,report,contact,about;
+    ImageView backbtn;
     public MoreFragment() {
         // Required empty public constructor
     }
@@ -34,7 +36,13 @@ public class MoreFragment extends Fragment {
         report= mview.findViewById(R.id.report);
         contact= mview.findViewById(R.id.contact);
         about= mview.findViewById(R.id.about);
+        backbtn=mview.findViewById(R.id.back);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         invite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
