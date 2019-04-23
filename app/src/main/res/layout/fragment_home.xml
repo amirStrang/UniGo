@@ -48,4 +48,11 @@
         android:text="انبار"
         android:textColor="#0067c4"
         android:textSize="12dp"/>
+    <Button
+        android:id="@+id/matchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="مسابقه"
+        />
 </RelativeLayout>

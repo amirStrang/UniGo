@@ -8,15 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
+import com.eaglet.unigo.Match.SelectMode;
 import com.eaglet.unigo.Store.Store;
 
 
 public class HomeFragment extends Fragment {
 
-Button film_btn,Store_btn;
+Button film_btn,Store_btn, matchbtn;
     View view;
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -37,6 +38,13 @@ Button film_btn,Store_btn;
              }
          });
 
+        matchbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), SelectMode.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -49,5 +57,6 @@ Button film_btn,Store_btn;
     {
         film_btn=(Button)view.findViewById(R.id.film_btn);
         Store_btn=(Button)view.findViewById(R.id.store_btn);
+        matchbtn=view.findViewById(R.id.matchbtn);
     }
 }

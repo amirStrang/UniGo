@@ -1,17 +1,18 @@
 package com.eaglet.unigo;
 
-import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView mBottomNavigation;
     private int mNavLastItemId;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomNavigation.setSelectedItemId(R.id.action_home);
         //save last fragment before transfer to add activity
         mNavLastItemId = R.id.action_home;
+
     }
 
     @Override
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //init bottom navigation
         mBottomNavigation = findViewById(R.id.bottom_navigation);
         mBottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
 
     }
 

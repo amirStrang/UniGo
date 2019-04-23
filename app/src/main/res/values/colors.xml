@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#0067C4</color>
     <color name="colorAccent">#FA9C04</color>
     <color name="inactiveIconColor">#8C000000</color>
+    <color name="greenRecBack">#68db00</color>
 </resources>

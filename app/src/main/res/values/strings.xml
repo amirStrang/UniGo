@@ -25,6 +25,32 @@
     <string name="ensani">انسانی</string>
     <string name="riazi">ریاضی</string>
     <string name="tajrobi">تجربی</string>
+    <string name="serch_name">جست و جوی اسم</string>
+    <string name="random_raghib">رقیب تصادفی</string>
+    <string name="robot">ربات</string>
+    <string name="serch">جست و جو</string>
+    <string name="select_your_lesson">درس خود را مقابل نام کاربری
+        \n
+        مشخص کنید
+    </string>
+    <string name="dars_jadid_price">۱۵</string>
+    <string name="new_lessons">دروس جدید</string>
+    <string name="lesson_one">درس اول</string>
+    <string name="lesson_two">درس دوم</string>
+    <string name="lesson_three">درس سوم</string>
+    <string name="dont_like_lesson">ازین درس خوشت نمیاد ؟</string>
+    <string name="select_chapter">فصل خود را مقابل نام کاربری\n مشخص کنید</string>
+    <string name="chapter_one">فصل اول</string>
+    <string name="chapter_two">فصل دوم</string>
+    <string name="chapter_three">فصل سوم</string>
+    <string name="dont_like_chapter">ازین فصل ها خوشت نمیاد ؟</string>
+    <string name="other_chapter">فصل های دیگر</string>
+    <string name="goft_goo">گفت و گو</string>
+    <string name="was_easy">راحت بود</string>
+    <string name="was_hard">سخت بود</string>
+    <string name="lets_continue">ادامه بده</string>
+    <string name="question_report">گزارش سوال</string>
+    <string name="add_to_anbar">افزودن به انبار</string>
 
     <string-array name="cities">
         <item>تهران</item>
