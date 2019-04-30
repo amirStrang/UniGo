@@ -19,7 +19,7 @@ public class SerchAdapter extends RecyclerView.Adapter<SerchAdapter.MyViewHolder
 
         public MyViewHolder(View view) {
             super(view);
-            txtUserName = (TextView) view.findViewById(R.id.txt_username);
+            txtUserName = (TextView) view.findViewById(R.id.txt_turn_username);
 
         }
     }

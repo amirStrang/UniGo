@@ -276,7 +276,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_add_anbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@android:color/white"
+        />
 
     <Button
         android:id="@+id/btn_was_hard"
@@ -291,7 +293,9 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_continue"
         app:layout_constraintEnd_toStartOf="@+id/btn_was_easy"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@android:color/white"
+        />
 
     <Button
         android:id="@+id/btn_was_easy"
@@ -306,7 +310,9 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_was_hard" />
+        app:layout_constraintStart_toEndOf="@+id/btn_was_hard"
+        android:textColor="@android:color/white"
+        />
 
     <android.support.constraint.Group
         android:id="@+id/go_next_group"
@@ -319,6 +325,59 @@
         android:id="@+id/play_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="btn_gozine2,btn_gozine1,time_rec_border,buy_time_rec,btn_gozine3,btn_gozine4" />
+        app:constraint_referenced_ids="btn_gozine2,btn_gozine1,time_rec_border,buy_time_rec,btn_gozine3,btn_gozine4,sand_clock_bg,image_sand_clock,image_coin,txt_time_coin" />
+
+    <TextView
+        android:id="@+id/sand_clock_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="w,1:2"
+        app:layout_constraintEnd_toEndOf="@+id/buy_time_rec"
+        app:layout_constraintStart_toStartOf="@+id/buy_time_rec"
+        app:layout_constraintTop_toTopOf="@+id/buy_time_rec"
+        android:background="@drawable/white_rec"
+        />
+
+    <ImageView
+        android:id="@+id/image_sand_clock"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sand_clock_bg"
+        app:layout_constraintEnd_toEndOf="@+id/sand_clock_bg"
+        app:layout_constraintStart_toStartOf="@+id/sand_clock_bg"
+        app:layout_constraintTop_toTopOf="@+id/sand_clock_bg"
+        android:src="@drawable/sands_of_time"
+        />
+
+    <ImageView
+        android:id="@+id/image_coin"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buy_time_rec"
+        app:layout_constraintStart_toStartOf="@+id/buy_time_rec"
+        app:layout_constraintTop_toBottomOf="@+id/sand_clock_bg"
+        app:layout_constraintVertical_bias="0.51"
+        app:srcCompat="@drawable/coinxxxhdpi" />
+
+    <TextView
+        android:id="@+id/txt_time_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="8dp"
+        android:text="10"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buy_time_rec"
+        app:layout_constraintEnd_toEndOf="@+id/buy_time_rec"
+        app:layout_constraintTop_toBottomOf="@+id/sand_clock_bg" />
 
 </android.support.constraint.ConstraintLayout>

@@ -39,18 +39,13 @@
 
         <activity android:name=".Match.SelectMode" android:label="مسابقه" >
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".Match.Serch" android:label="جست و جو" android:parentActivityName=".Match.SelectMode"/>
         <activity android:name=".Match.SelectLesson" android:label="مسابقه" android:parentActivityName=".Match.SelectMode"/>
-        <activity android:name=".Match.SelectChapter" android:label="مسابقه" android:parentActivityName=".Match.SelectMode"/>
-        <activity android:name=".Match.Play" android:label="مسابقه" android:parentActivityName=".Match.SelectMode"/>
-        <activity android:name=".Match.EndActivity" android:label="مسابقه" android:parentActivityName=".Match.SelectMode"/>
+        <activity android:name=".Match.SelectChapter" android:label="مسابقه" android:parentActivityName=".Match.SelectLesson"/>
+        <activity android:name=".Match.Play" android:label="مسابقه" android:parentActivityName=".Match.SelectChapter"/>
+        <activity android:name=".Match.EndActivity" android:label="مسابقه" android:parentActivityName=".Match.SelectChapter"/>
     </application>
 
 </manifest>

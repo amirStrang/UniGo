@@ -76,12 +76,12 @@ public class Play extends AppCompatActivity implements View.OnClickListener{
 
     }
 
-
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.btn_continue) {
             Intent intent = new Intent(Play.this, EndActivity.class);
             startActivity(intent);
+            finish();
         }
         else {
             int animationTime = 200;

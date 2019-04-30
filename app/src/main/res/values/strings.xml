@@ -51,6 +51,9 @@
     <string name="lets_continue">ادامه بده</string>
     <string name="question_report">گزارش سوال</string>
     <string name="add_to_anbar">افزودن به انبار</string>
+    <string name="your_turn">نوبت شما</string>
+    <string name="opp_turn">نوبت حریف</string>
+    <string name="chat">چت</string>
 
     <string-array name="cities">
         <item>تهران</item>

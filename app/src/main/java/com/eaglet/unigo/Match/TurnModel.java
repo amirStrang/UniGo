@@ -1,11 +1,13 @@
 package com.eaglet.unigo.Match;
 
-public class SerchModel {
+public class TurnModel {
     private String userName;
     private String imageUrl;
+    private String score;
 
-    public SerchModel(String userName) {
+    public TurnModel(String userName, String score) {
         this.userName = userName;
+        this.score = score;
     }
 
     public String getUserName() {
@@ -22,5 +24,13 @@ public class SerchModel {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
     }
 }
