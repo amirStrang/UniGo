@@ -28,6 +28,7 @@ public class SerchAdapter extends RecyclerView.Adapter<SerchAdapter.MyViewHolder
         this.serchList = serchList;
     }
 
+
     @NonNull
     @Override
     public SerchAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {

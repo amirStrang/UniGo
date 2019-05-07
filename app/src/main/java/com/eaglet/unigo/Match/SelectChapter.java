@@ -40,7 +40,7 @@ public class SelectChapter extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(SelectChapter.this, Play.class);
+        Intent intent = new Intent(SelectChapter.this, EndActivity.class);
         startActivity(intent);
 
     }

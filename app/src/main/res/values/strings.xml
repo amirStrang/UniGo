@@ -54,6 +54,7 @@
     <string name="your_turn">نوبت شما</string>
     <string name="opp_turn">نوبت حریف</string>
     <string name="chat">چت</string>
+    <string name="game">بازی</string>
 
     <string-array name="cities">
         <item>تهران</item>

@@ -17,11 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Invite_Friends" />
         <activity android:name=".Store.Store" />
@@ -38,6 +34,11 @@
             android:windowSoftInputMode="adjustPan"/>
 
         <activity android:name=".Match.SelectMode" android:label="مسابقه" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 

@@ -77,10 +77,16 @@ public class Play extends AppCompatActivity implements View.OnClickListener{
     }
 
     @Override
+    public void finish() {
+        Intent data = new Intent();
+        data.putExtra("endGame", true);
+        setResult(RESULT_OK, data);
+        super.finish();
+    }
+
+    @Override
     public void onClick(View v) {
         if(v.getId() == R.id.btn_continue) {
-            Intent intent = new Intent(Play.this, EndActivity.class);
-            startActivity(intent);
             finish();
         }
         else {
@@ -112,4 +118,6 @@ public class Play extends AppCompatActivity implements View.OnClickListener{
             btnWasEasy.startAnimation(fadeIn);
         }
     }
+
+
 }
